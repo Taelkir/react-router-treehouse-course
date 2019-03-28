@@ -18,7 +18,7 @@ const App = () => (
 			{// 'Exact' attribute here makes sure that the / is only used for the Index page and not included in other routes which also contain a /
 			}
 			<Route exact path="/" component={Home} />
-			<Route path="/about" component={About} />
+			<Route path="/about" render={ () => <About title="About"/> } />
 			<Route path="/teachers" component={Teachers} />
 			<Route path="/courses" component={Courses} />
 	  </div>
