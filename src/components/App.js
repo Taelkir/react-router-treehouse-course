@@ -15,7 +15,7 @@ const App = () => (
 	<BrowserRouter>
 	  <div className="container">
 			<Header />
-			{// 'Exact' attribute here makes sure that the / is only used for the Index page and not included in other routes which also contain a /
+			{// 'Exact' prop here makes sure that the / is only used for the Index page and not included in other routes which also contain a /
 			}
 			<Route exact path="/" component={Home} />
 			<Route path="/about" render={ () => <About title="About"/> } />
