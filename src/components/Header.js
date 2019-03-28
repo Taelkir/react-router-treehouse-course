@@ -11,8 +11,8 @@ const Header = () => (
 				<NavLink exact to="/" activeStyle={{ background: "tomato"}}>Home</NavLink>
 			</li>
       <li>
-			{// activeClassName lets you customise the class that gets applied to active NavLinks, rather than having it be the default "active"
-			}
+				{// activeClassName lets you customise the class that gets applied to active NavLinks, rather than having it be the default "active"
+				}
 				<NavLink to="/about" activeClassName="active i-am-active-man">About</NavLink>
 			</li>
       <li>
