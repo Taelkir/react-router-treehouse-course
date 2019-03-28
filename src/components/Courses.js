@@ -1,10 +1,10 @@
 import React from 'react';
 import { NavLink, Route, Redirect } from "react-router-dom";
+import { HTMLCourses, CSSCourses, JSCourses } from '../data/courses';
+
 
 // components
-import CSS from "./courses/CSS";
-import HTML from "./courses/HTML";
-import JavaScript from "./courses/JavaScript";
+import CourseContainer from "./courses/CourseContainer";
 
 // match is a custom prop made and inserted by React Router
 // Another treehouse comment:
@@ -29,9 +29,9 @@ const Courses = ({match}) => (
 		{/* This route renders a redirect component only if the user ends up on /courses so that the /courses route doesn't only feature a title and a navbar. Exact prop is needed because otherwise you get into a loop */}
 		{/* match.path is used here because /html /css /javascript are always going to be nested inside of /courses - but what if we one day want to change the name of /courses? this will allow us to do so without going through every url nested within it and changes that too */}
 		<Route exact path={match.path} render={ () => <Redirect to={`${match.path}/html`} /> } />
-		<Route path={`${match.path}/html`} component={HTML} />
-		<Route path={`${match.path}/css`} component={CSS} />
-		<Route path={`${match.path}/javascript`} component={JavaScript} />
+		<Route path={`${match.path}/html`} render={ () => <CourseContainer data={HTMLCourses} />} />
+		<Route path={`${match.path}/css`} render={ () => <CourseContainer data={CSSCourses} />} />
+		<Route path={`${match.path}/javascript`} render={ () => <CourseContainer data={JSCourses} />} />
   </div>
 );
 
