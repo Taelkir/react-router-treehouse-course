@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, Route } from "react-router-dom";
+import { NavLink, Route, Redirect } from "react-router-dom";
 
 // components
 import CSS from "./courses/CSS";
@@ -23,6 +23,8 @@ const Courses = () => (
       </ul>
     </div>
 
+		{/* This route renders a redirect component only if the user ends up on /courses so that they /courses route doesn't only feature a title and a navbar. Exact prop is needed because otherwise you get into a loop */}
+		<Route exact path="/courses" render={ () => <Redirect to="/courses/html" /> } />
 		<Route path="/courses/html" component={HTML} />
 		<Route path="/courses/css" component={CSS} />
 		<Route path="/courses/javascript" component={JavaScript} />
