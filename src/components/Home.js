@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { Link } from "react-router-dom";
 class Home extends Component {
 
   render() {
@@ -11,6 +11,10 @@ class Home extends Component {
         <p>Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should. Is this my espresso machine? Wh-what is-h-how did you get my espresso machine? Hey, take a look at the earthlings. Goodbye! What do they got in there? King Kong?</p>
 
         <hr />
+
+        <h3>Featured Teachers</h3>
+        <Link to="teachers/Acting/Tommy-Wisaeu">Tommy Wisaeu</ Link>
+        <Link to="teachers/JavaScript/Tom-Stanley">Tom Stanley</ Link>
 
       </div>
     );
