@@ -1,10 +1,10 @@
-/* ================================= 
+/* =================================
   WEB FONTS
 ==================================== */
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
 
-/* ================================= 
+/* =================================
   ELEMENT STYLES
 ==================================== */
 
@@ -13,7 +13,7 @@
 }
 body {
   color: #576366;
-  background: #5fcf80;
+  background: #25DFAC;
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
@@ -64,7 +64,7 @@ button {
   border-color: rgba(0,0,0, .1);
 }
 
-/* ================================= 
+/* =================================
   LAYOUT & PAGE STYLES
 ==================================== */
 
@@ -79,7 +79,7 @@ button {
   overflow: hidden;
 }
 header {
-  background: #edeff0;
+  background: #F5F5F5;
   margin-bottom: 2em;
 }
 .main-content {
@@ -149,7 +149,7 @@ header {
 /* ICONS -------- */
 
 .icn-logo {
-  background: #54606b;
+  background: #FB2A63;
   color: #fff;
 }
 .icn-logo i {
@@ -162,11 +162,11 @@ header {
   margin-bottom: .25em;
 }
 
-/* ================================= 
+/* =================================
   MEDIA QUERIES
 ==================================== */
 
-@media (min-width: 0) and (max-width: 768px) { 
+@media (min-width: 0) and (max-width: 768px) {
   body {
     padding-top: .8em;
   }
@@ -216,7 +216,7 @@ header {
   .media > div {
     width: 85.1%;
     margin-left: 1.5em;
-  } 
+  }
   .teacher {
     width: 48.73%;
     margin-bottom: 1.5em;
@@ -249,7 +249,7 @@ header {
   /* COURSE NAV -------- */
   .course-nav {
     float: right;
-  } 
+  }
   .courses h2 {
     float: left;
   }
